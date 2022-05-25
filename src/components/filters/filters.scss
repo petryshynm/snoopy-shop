@@ -1,0 +1,55 @@
+.filters {
+    position: relative;
+    min-width: 20%;
+    height: 100%;
+    border: 0.5px solid rgb(196, 196, 196);
+    border-bottom: none;
+    border-right: none;
+    &__btns {
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        display: flex;
+    }
+}
+
+.sorting-type{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.filter {
+    padding: 10px;
+    border-bottom: 0.5px solid rgb(196, 196, 196);
+    color: darkslategray;
+    
+    &__title {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        transform: scale(1.1);
+        margin-right: 10px;
+    }
+
+    &__select {
+        outline: none;
+        color: darkslategray;
+        border: 2px solid darkslategray;
+        border-radius: 6px;
+        width: 100%;
+        font-size: 14px;
+        height: 30px;
+    }
+}

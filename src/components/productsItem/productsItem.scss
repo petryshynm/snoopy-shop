@@ -1,0 +1,117 @@
+@import '../../styles/variables.scss';
+.product-profile{
+    min-height: 600px;
+    margin-bottom: 100px;
+    >div:first-child{
+        padding: 40px 0 ;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        height: 500px;
+        border-bottom: 0.5px solid rgb(196, 196, 196);
+    }
+    .loader{
+        border: none!important;
+    }
+    width: 100%;
+
+    &__info{
+        width: 40%;
+        
+        padding: 20px;
+    }
+    &__chars{
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        border: 0.5px solid rgb(196, 196, 196);
+        border-top: none;
+    }
+    &__block{
+        &:first-child{
+            border-right: 0.5px solid rgb(196, 196, 196);
+        }
+        width: 50%;
+        padding: 40px;
+    }
+    &__header{
+        font-size: 21px;
+        color: $grey;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    li{
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $grey;
+        margin-bottom: 20px;
+    }
+    &__available{
+        font-size: 16px;
+        font-size: 300;
+        color: rgb(163, 163, 163);
+        margin-bottom: 30px;
+    }
+    &__rating{
+        position: relative;
+        right: 0;
+    }
+    &__price {
+        font-weight: 700;
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 170px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__price-old {
+        height: 100%;
+        color: gray;
+        text-decoration: line-through;
+        font-size: 23px;
+    }
+
+    &__price-new {
+        color: rgb(226, 42, 42);
+        font-size: 29px;
+    }
+    .button{
+        width: 80%;
+        font-size: 18px;
+    }
+    &__rating{
+        display: flex;
+        align-items: center;
+        &>div{
+            color: gray;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    }
+    .carousel{
+        width: 400px;
+    }
+    .carousel-item{
+        width: 400px;
+        & > div{
+            display: flex;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            img{
+                cursor: pointer;
+                height: inherit;
+            }
+        }
+    }
+}

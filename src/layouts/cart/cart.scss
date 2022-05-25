@@ -1,0 +1,116 @@
+@import '../../styles/variables.scss';
+
+.cart{
+    min-height: 600px;
+    color: $grey;
+    width: calc(100% - 400px);
+    position: relative;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+        padding-bottom: 30px;
+    }
+    &-product{
+        display: flex;
+    }
+    &-labels{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item{
+        width: 55%;
+    }
+    .price, .quantity, .subtotal{
+        width: 15%;
+        text-align: center;
+    }
+    &-item{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid $grey;
+        &-info{
+            cursor: pointer;
+            display: flex;
+            font-size: 14px;
+        }
+        .remove-btn{
+            position: absolute;
+            bottom: 15px;
+            right: 0;
+        }
+    }
+}
+  
+.product{
+    &-image{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin: 0 auto;
+            height: 100%;
+        }
+    }
+    &-details > div{
+        margin-bottom: 10px;
+    }
+}
+
+.summary{
+    width: 300px;
+    height: fit-content;
+    background-color: lightgray;
+    border: 1px solid $grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    &-checkout{
+        width: 100%;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        background: $main-color;
+        border: none;
+        outline: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: $main-color-hover;
+        }
+    }
+    &-total{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 15px 0;
+        &-items{
+            font-size: 16px;
+            color: $grey;
+            font-weight: 100;
+        }
+        .title{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    .total-items{
+        font-weight: bold;
+    }
+}
+
+.bordered{
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 10px 0;
+}
+
